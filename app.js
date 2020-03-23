@@ -11,4 +11,4 @@ var server = app.listen(8800, function(){
 });
 
 app.use(express.static('public'));
-app.use('/mp4', express.static('/home/taihoinst/fileserver/output'));
+app.use('/mp4', express.static('fileserver/output'));
