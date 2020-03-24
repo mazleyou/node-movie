@@ -13,7 +13,7 @@ $(document).ready(function (){
             data: formData,
             success: function(res) {
                 console.log(res['fileName']);
-                $('#video > source').attr('src', 'http://52.141.7.91:8800/mp4/output.mp4');
+                $('#video > source').attr('src', 'http://52.141.7.91:8800/mp4/' + res['fileName']);
                 $('#video').load();
                 document.getElementById("video").play();
             }
